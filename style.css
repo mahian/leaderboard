@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-     background-color: #E5E5E5;
+     background-color: #F3F1FF;
 }
 :root{
     --primary-color: #562EFF;
@@ -21,6 +21,7 @@ body{
     padding: 30px;
     background-color: white;
     border-radius: 5px;
+    margin: 10px 0;
 }
 main{
     display: flex;
@@ -96,6 +97,8 @@ article{
 }
 .course{
     padding: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.050);
+    border-radius: 12px;
 }
 .courses .thumbnail img{
     width: 100%;
@@ -124,6 +127,10 @@ article{
 .courses .other_details{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.rating{
+    display: flex;
     align-items: center;
 }
 .rating i{
