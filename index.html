@@ -22,17 +22,22 @@
             <nav>
                 <div class="logo">
                     <span><img src="images/icons/logo.png" alt="" />Idea</span>
-                    <span class="ham"><i class="fa-solid fa-bars"></i></span>
+                    <span onclick="open_nav()" id="open_nav" class="ham"
+                        ><i class="fa-solid fa-bars"></i
+                    ></span>
                 </div>
+                <div class="menus">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#"><img src="images/icons/profile.png" alt=""></a></li>
+                    <li onclick="close_nav()" id="close_nav"><i class="fa-solid fa-xmark"></i></li>
+                    <li class="menu_link"><a href="#">Home</a></li>
+                    <li class="menu_link"><a href="#">About</a></li>
+                    <li class="menu_link"><a href="#">Works</a></li>
+                    <li><a href="#"><img src="images/icons/profile.png" alt=""/></a></li>
                 </ul>
+                </div>
             </nav>
         </header>
-        
+
         <!-- header end -->
 
         <!-- main content start -->
@@ -196,4 +201,17 @@
         </main>
         <!-- main content end -->
     </body>
+    <script>
+        let navBarcon = document.querySelector(".menus");
+        let navBar = document.querySelector("nav ul");
+        let open_nav = () => {
+            navBarcon.style.display = "block";
+            navBar.style.right = "0%";
+
+        };
+        let close_nav = () => {
+            navBarcon.style.display = "none";
+            navBar.style.right = "-70%";
+        };
+    </script>
 </html>
